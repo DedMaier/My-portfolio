@@ -1,0 +1,334 @@
+@media (max-width: 1199px) {
+  .hero__img {
+    position: absolute;
+    top: -60px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-bottom: 135px;
+    background-image: radial-gradient(closest-side at 71% 68%, #555681, #212133);
+  }
+
+  .hero__title {
+    margin-bottom: 15px;
+    font-size: 50px;
+    line-height: 100%;
+  }
+
+  .hero__img {
+    top: -14px;
+  }
+
+  .benefits {
+    padding-top: 81px;
+    padding-bottom: 75px;
+  }
+
+  .benefits__title {
+    width: 100%;
+  }
+
+  .benefits__descr {
+    width: 100%;
+  }
+
+  .benefits__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .benefits__bottom-img {
+    margin-right: 0;
+    margin-bottom: 11px;
+  }
+
+  .teachers {
+    padding-top: 75px;
+    padding-bottom: 26px;
+  }
+
+  .teachers__item:nth-last-child(-n+2) {
+    margin-bottom: 23px;
+  }
+
+  .teachers__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .courses {
+    padding-bottom: 81px;
+  }
+
+  .courses__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .courses__item-hours {
+    right: 9px;
+  }
+
+  .courses__card:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 31px;
+  }
+
+  .courses__item-descr {
+    margin-bottom: 29px;
+  }
+
+  .courses__item-btn {
+    padding: 21px 56px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .header__content {
+    justify-content: center;
+  }
+
+  .header__logo {
+    margin-right: 0;
+    margin-bottom: 31px;
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 77px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+
+  .hero__descr {
+    margin-bottom: 63px;
+  }
+
+  .benefits {
+    padding-top: 81px;
+    padding-bottom: 55px;
+  }
+
+  .benefits .row-top {
+    margin-bottom: 24px;
+    align-items: flex-start;
+  }
+
+  .benefits__bottom-img {
+    margin-bottom: 10px;
+  }
+
+  .teachers {
+    padding-bottom: 50px;
+  }
+
+  .courses__item-text {
+    padding-right: 18px;
+  }
+
+  .courses__item-subtitle {
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .courses__item-descr {
+    margin-bottom: 34px;
+  }
+
+  .courses__item-btn {
+    padding: 21px 48px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .title {
+    font-size: 20px;
+    line-height: 130%;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  .header {
+    padding-top: 31px;
+    padding-bottom: 32px;
+  }
+
+  .header__logo {
+    margin-bottom: 0;
+    margin-right: auto;
+  }
+
+  .header__nav {
+    position: absolute;
+    left: 0;
+    top: -31px;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    padding: 77px 15px 105px;
+    background-color: var(--color-burger);
+    visibility: hidden;
+    transform: translateX(-120%);
+    transition: transform .5s ease-in-out, visibility .5s ease-in-out;
+  }
+
+  .header__nav--active {
+    transform: translateX(0);
+    visibility: visible;
+    transform: none;
+  }
+
+  .header__nav--active .nav__list {
+    align-items: start;
+    margin-right: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-bottom: 56px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .burger {
+    margin-right: 4px;
+    display: inline-flex;
+  }
+
+  .burger--active {
+    transform-origin: center;
+  }
+
+  .burger--active .burger__line {
+    opacity: 0;
+  }
+
+  .burger--active::before,
+  .burger--active:active .burger__line::before {
+    top: 45%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform .3s ease-in-out, top .3s ease-in-out, left .3s ease-in-out;
+  }
+
+  .burger--active::after,
+  .burger--active:active .burger__line::after {
+    bottom: auto;
+    top: 45%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    transition: transform .3s ease-in-out, top .3s ease-in-out, left .3s ease-in-out;
+  }
+
+  .hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero__content {
+    flex-basis: 100%;
+  }
+
+  .hero__title {
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .hero__descr {
+    margin-bottom: 45px;
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .hero__btn {
+    padding: 21px 54px 20px 53px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .benefits {
+    padding-top: 51px;
+    padding-bottom: 38px;
+  }
+
+  .benefits .row-top {
+    margin-bottom: 25px;
+  }
+
+  .benefits .row-top .col-sm-4 {
+    display: none;
+  }
+
+  .benefits__title {
+    margin-bottom: 1px;
+  }
+
+  .benefits__bottom {
+    flex-direction: row;
+  }
+
+  .benefits .row-bottom .col-sm-4:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* .benefits__bottom:not(:last-child) {
+    margin-bottom: 21px;
+  } - почему этот код не сработал?*/
+
+  .benefits__bottom-img {
+    margin-right: 80px;
+  }
+
+  .teachers {
+    padding-top: 45px;
+    padding-bottom: 23px;
+  }
+
+  .courses {
+    padding-top: 44px;
+    padding-bottom: 51px;
+  }
+
+  .courses__card {
+    min-height: 652px;
+  }
+
+  .courses__card:not(:last-child) {
+    margin-bottom: 31px;
+  }
+
+  .courses__item-text {
+    padding-right: 22px;
+  }
+
+  .courses__item-descr {
+    margin-bottom: 82px;
+  }
+
+  .courses__item-btn {
+    padding: 21px 56px 20px;
+  }
+
+  .courses__img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
